@@ -1,16 +1,16 @@
 const readlineSync = require("readline-sync");
 
- const number = Number(readlineSync.question("\nEnter a number: "));
+const number = Number(readlineSync.question("\nEnter a number: "));
 
-if (number > 0){
-  console.log("\nPositive.\n");
+if (Number.isNaN(number) || Number.isSafeInteger(number) != true){
+  console.log("\nInvalid.");
+}
+else if (number > 0){
+  console.log("\nPositive.");
 }
 else if (number < 0){
-  console.log("\nNegative.\n");
+  console.log("\nNegative.");
 }
 else if (number == 0){
-  console.log("\nZero.\n");
-}
-else if (Number.isNaN(number)){
-  console.log("\nInvalid.\n");
+  console.log("\nZero.");
 }
