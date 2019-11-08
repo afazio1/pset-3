@@ -15,9 +15,9 @@ let nickels = 0;
 let pennies = 0;
 
 if (Number.isNaN(amount)) {
-    console.log("\nInvalid");
+    console.log("\nInvalid.\n");
 } else if (amount < MIN || amount > MAX) {
-    console.log("\nInvalid.");
+    console.log("\nInvalid.\n");
 } else {
     // write your code for making change here
     while (amount/QUARTER_VALUE >= 1 ){
@@ -36,6 +36,6 @@ if (Number.isNaN(amount)) {
       pennies = Math.floor(amount/PENNY_VALUE);
       amount = amount % PENNY_VALUE;
     }
-    console.log(`\n${quarters} quarters. ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies.`);
+    console.log(`\n${quarters} quarters, ${dimes} dimes, ${nickels} nickels, and ${pennies} pennies.\n`);
 
 }

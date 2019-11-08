@@ -10,37 +10,37 @@ let difference2 = number3 - number2;
 
 if (difference1 > 0){
   if (difference2 > 0){
-    console.log("\nStrictly increasing.");
+    console.log("\nStrictly increasing.\n");
   }
   else if (difference2 < 0){
-    console.log("\nUnordered.");
+    console.log("\nUnordered.\n");
   }
   else {
-    console.log("\nIncreasing.")
+    console.log("\nIncreasing.\n")
   }
 }
 else if (difference1 == 0){
   if(difference2 == 0){
-    console.log("\nEqual.");
+    console.log("\nEqual.\n");
   }
   else if (difference2 < 0){
-    console.log("\nDecreasing.");
+    console.log("\nDecreasing.\n");
   }
   else {
-    console.log("\nIncreasing.");
+    console.log("\nIncreasing.\n");
   }
 }
 else if (difference1 < 0){
   if (difference2 < 0){
-    console.log("\nStrictly decreasing.");
+    console.log("\nStrictly decreasing.\n");
   }
   else if (difference2 == 0){
-    console.log("\nDecreasing.");
+    console.log("\nDecreasing.\n");
   }
   else if (difference2 > 0){
-    console.log("\nUnordered.");
+    console.log("\nUnordered.\n");
   }
 }
 else {
-  console.log("\nInvalid.");
+  console.log("\nInvalid.\n");
 }

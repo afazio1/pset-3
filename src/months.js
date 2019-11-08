@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-let month = (readlineSync.question("\nEnter a month: "));
+let month = readlineSync.question("\nEnter a month: ");
 month = month.toLowerCase();
 
 if (month == "jan" || month == "january" || month == "mar" || month == "march" || month == "may" || month == "jul" || month == "july" || month == "aug" || month == "august" || month == "oct" || month == "october" || month == "dec" || month == "december") {

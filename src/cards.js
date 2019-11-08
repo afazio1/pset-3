@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-let playingCard = (readlineSync.question("\nEnter a playing card: "));
+let playingCard = readlineSync.question("\nEnter a playing card: ");
 playingCard = playingCard.toLowerCase();
 let cardRank = playingCard.charAt(0);
 let cardSuit = playingCard.charAt(1);
