@@ -69,6 +69,6 @@ function findCardRank(x, y) {
     console.log("\n"+ "Ace of " + y + ".\n");
   }
   else {
-    console.log("\n"+ "Invalid.\n");
+    console.log("\nInvalid.\n");
   }
 }
